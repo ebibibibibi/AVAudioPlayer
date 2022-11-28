@@ -9,8 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("再生する")
+                .padding()
+                .onTapGesture {
+                    print("ボタンが押されたよ")
+                }
+            Text("停止する")
+                .padding()
+                .onTapGesture {
+                    print("ボタンが押されたよ")
+                }
+            
+            Text("最初から")
+                .padding()
+                .onTapGesture {
+                    print("ボタンが押されたよ")
+                }
+        }
     }
 }
 
